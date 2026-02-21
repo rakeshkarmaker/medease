@@ -12,11 +12,12 @@ const Header = () => {
         <div className="flex flex-col md:flex-row items-center gap-3 text-white text-sm md:text-base lg:text-lg font-light" >
           <img className="w-28" src={assets.group_profiles} alt="Group Profiles" />
           <p>
-            Our team of experts is here to help you <br /> Schedule your
+            Expert Doctors are here to help<br className="hidden sm:block"/> Schedule your
             appointments today!
           </p>
         </div>
-        <a href="" className="flex items-center gap-2 bg-white px-8 py-3 rounded-full text-primary font-medium w-max">
+        {/* text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300s, so the md:m-0 is the reason of causing the ux issue */}
+        <a href="#speciality-menu" className="flex items-center gap-2 bg-white px-8 py-3 rounded-full text-primary font-medium text-sm m-auto hover:scale-105 transition-all duration-300">
           Book Appointments <img src={assets.arrow_icon} alt="Arrow" />
         </a>
       </div>

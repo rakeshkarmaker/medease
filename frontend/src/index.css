@@ -20,3 +20,15 @@ It applies Tailwind’s `block` display to any `<hr>` inside an element with the
 .active hr{
   @apply block
 }
+/* Hiding the Scrollbar */
+::-webkit-scrollbar {
+  @apply hidden
+}
+
+
+/* custom grid utility */
+/* Here, Creates a responsive grid that automatically fits as many columns as possible, each at least 200px wide */
+/* Columns expand equally and adjust themselves based on screen/container size */
+@utility grid-cols-auto {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}

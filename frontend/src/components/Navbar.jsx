@@ -5,7 +5,7 @@ import { useState } from "react";
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const [activeLink, setActiveLink] = useState(false);
+  // const [activeLink, setActiveLink] = useState(false);
   const [token, setToken] = useState(true);
 
   return (

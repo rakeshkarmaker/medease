@@ -2,7 +2,7 @@
 
 // Logos
 
-import logo from './logos/logo.svg'
+import logo from './logos/MedEase_Main_Logo_NoBG.png'
 import razorpay_logo from './logos/razorpay_logo.png'
 import stripe_logo from './logos/stripe_logo.png'
 
