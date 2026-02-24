@@ -3,11 +3,13 @@ import { useNavigate } from "react-router-dom";
 // import { doctors } from '../assets/assets'; // Hwew, directly importing the doctors data from assets.
 // Instead, we can fetch from the context or an API.
 import { useContext } from "react";
-import { AppContext } from "../contexts/context"; // we have an AppContext that provides doctors data.
+import { AppContext } from "../contexts/AppContext"; // we have an AppContext that provides doctors data.
 
 const TopDoctors = () => {
   //Adding context to fetch doctors data instead of importing directly from assets.
-  const doctors = useContext(AppContext); // Assuming doctors data is available in AppContext.
+
+  // v1.0.1- Updated: useContext gives the whole object — not the array inside it, so we need to destructure it to get the doctors array.
+  const {doctors} = useContext(AppContext); // Assuming doctors data is available in AppContext.
 
   const navigate = useNavigate();
   return (
